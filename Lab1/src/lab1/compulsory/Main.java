@@ -1,3 +1,5 @@
+package lab1.compulsory;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
@@ -7,11 +9,11 @@ public class Main {
         n=n+Integer.parseInt("10101", 2);
         n=n+Integer.parseInt("FF", 16);
         n=n*6;
-while(n>9)
-{
-    n=sum_cif(n);
-}
-int result=n;
+        while(n>9)
+        {
+            n=sum_cif(n);
+        }
+        int result=n;
         System.out.println("Willy-nilly, this semester I will learn " + languages[result]);
 
     }
