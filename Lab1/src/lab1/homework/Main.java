@@ -19,8 +19,8 @@ public class Main {
     {
         for(int i=0;i<n;++i) {
         StringBuilder sb = new StringBuilder();
-        for (int j = 0; j < n; j++) {
-            sb.append(m[i][j]);
+        for (int j = 0; j < n; ++j) {
+            sb.append(m[i][j] + " ");
         }
         if(n<=10000) System.out.println(sb);
     }
@@ -30,7 +30,7 @@ public class Main {
         for(int j=0;j<n;++j) {
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < n; i++) {
-                sb.append(m[i][j]);
+                sb.append(m[j][i]+ " ");
             }
             if(n<=10000) System.out.println(sb);
         }
@@ -55,9 +55,9 @@ public class Main {
         }
 var m = LatinSquare(n);
 long Start = System.currentTimeMillis();
-        Lines(n, m);
-        System.out.println();
-        Columns(n,m);
+Lines(n, m);
+System.out.println();
+Columns(n,m);
 long End = System.currentTimeMillis();
 
 if(n>10000) {
