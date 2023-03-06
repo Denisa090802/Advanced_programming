@@ -20,5 +20,5 @@ Write doc comments in your source code and generate the class documentation usin
 Am creat clase corespunzatoare pentru drumuri si locatii si am creat liste corespunzatoare pentru ele in clasa Map. 
 Drumurile puteau fi de 3 tipuri: Highway, Express, Country
 Locatiile puteau fi de 3 tipuri: GasStation, Airport, City
-Am creeat getterele si setterele corespunzatoare.
+Am creat getterele si setterele corespunzatoare.
 In clasa Map am construit functii de verificare a validitatii si de verificare a existentei unui drum intre doua locatii.
