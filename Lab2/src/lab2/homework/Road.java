@@ -76,23 +76,4 @@ public class Road {
         SpeedLimit = speedLimit;
     }
 }
- class Highway extends Road{
-    public Highway(int length, int speedLimit, Location L1, Location L2)
-    {
-        super(length,speedLimit,L1,L2);
-    }
- }
 
-class Country extends Road{
-    public Country(int length, int speedLimit, Location L1, Location L2)
-    {
-        super(length,speedLimit,L1,L2);
-    }
-}
-
-class Express extends Road{
-    public Express(int length, int speedLimit, Location L1, Location L2)
-    {
-        super(length,speedLimit,L1,L2);
-    }
-}

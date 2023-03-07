@@ -60,32 +60,6 @@ public class Location {
     }
 }
 
-class City extends Location {
 
-    int population;
-    public City(String cityName, int x, int y,int population)
-    {
-        super(cityName,x,y);
-        this.population=population;
-    }
 
-}
-class AirPort extends Location
-{
-    int numberOfTerminals;
-    public AirPort(String airPortName,int x,int y, int numberOfTerminals )
-    {
-        super(airPortName,x,y);
-        this.numberOfTerminals=numberOfTerminals;
-    }
-}
 
-class GasStation extends Location
-{
-    int gasPrice;
-    public GasStation(String gasStationName,int x,int y,int gasPrice)
-    {
-        super(gasStationName,x,y);
-        this.gasPrice = gasPrice;
-    }
-}
