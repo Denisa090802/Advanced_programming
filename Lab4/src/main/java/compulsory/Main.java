@@ -9,21 +9,21 @@ public class Main {
     public static void main(String[] args) {
 
         var students = IntStream.rangeClosed(0, 3)
-                .mapToObj(i -> new Student("Student" + i))
+                .mapToObj(i -> new Student("S" + i))
                 .toArray(Student[]::new);
         System.out.println("Added " + students.length + " students");
 
 
         var projects = IntStream.rangeClosed(0, 2)
-                .mapToObj(i -> new Project("Project" + i) )
+                .mapToObj(i -> new Project("P" + i) )
                 .toArray(Project[]::new);
         System.out.println("Added " + projects.length + " students");
 
-        LinkedList<Student> studentLinkedList = new LinkedList<>();
-        studentLinkedList.addAll(Arrays.stream(students).toList());
-        Collections.sort(studentLinkedList,
+        LinkedList<Student> SLinkedList = new LinkedList<>();
+        SLinkedList.addAll(Arrays.stream(students).toList());
+        Collections.sort(SLinkedList,
                 ((u, v) -> u.GetName().compareTo(v.GetName())));
-        studentLinkedList.forEach((student) -> {
+        SLinkedList.forEach((student) -> {
             System.out.println(student.GetName());
         });
 
