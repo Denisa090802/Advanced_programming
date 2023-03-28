@@ -11,7 +11,12 @@ public class Main {
         doc.getTags().put("title", "Primavara");
         doc.getTags().put("year", "2020");
 
+        Document doc1 = new Document();
+        doc1.nume="Roman";
+        doc1.ID=2;
+
         op.add(catalog,doc);
+        op.add(catalog,doc1);
         System.out.println(op.toString(catalog));
 
         op.save(catalog);

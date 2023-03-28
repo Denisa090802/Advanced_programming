@@ -1,0 +1,14 @@
+<table>
+    <thead>
+        <td>Id</td>
+        <td>Nume</td>
+    </thead>
+    <tbody>
+        #foreach($doc in $documents)
+            <tr>
+                <td>$doc.getID()</td>
+                <td>$doc.getNume()</td>
+            </tr>
+        #end
+    </tbody>
+</table>

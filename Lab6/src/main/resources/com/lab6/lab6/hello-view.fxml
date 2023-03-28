@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.canvas.Canvas?>
+<VBox alignment="CENTER" prefHeight="297.0" prefWidth="454.0" spacing="20.0" style="-fx-background-color: lightgray;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lab6.lab6.HelloController">
+
+   <children>
+      <StackPane alignment="TOP_CENTER" maxHeight="20" minHeight="20" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: lightgray;">
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <Label layoutX="61.0" layoutY="10.0" text="number of dots" />
+               <Spinner fx:id="nrOfDots" layoutX="149.0" layoutY="7.0" prefHeight="25.0" prefWidth="151.0" />
+               <Button layoutX="319.0" layoutY="8.0" mnemonicParsing="false" text="new game" onAction="#CreateNewGame" />
+            </Pane>
+         </children>
+      </StackPane>
+      <StackPane fx:id="figHolder" prefHeight="391.0" prefWidth="414.0" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
+         <children>
+            <Canvas fx:id="fig"/>
+         </children>
+      </StackPane>
+      <StackPane alignment="BOTTOM_CENTER" maxHeight="20" minHeight="20" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: lightgray;">
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <Button layoutX="65.0" layoutY="-14.0" mnemonicParsing="false" text="load" />
+               <Button layoutX="153.0" layoutY="-13.0" mnemonicParsing="false" text="save" />
+               <Button layoutX="246.0" layoutY="-12.0" mnemonicParsing="false" text="reset" />
+               <Button layoutX="341.0" layoutY="-12.0" mnemonicParsing="false" text="exit" />
+            </Pane>
+         </children>
+      </StackPane>
+
+   </children>
+</VBox>
