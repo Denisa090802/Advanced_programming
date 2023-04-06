@@ -4,43 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12e8c543-4a51-4ddc-b513-6101657059f3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Lab5/.idea/artifacts/Lab5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab5/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab5/index.vm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab5/src/main/java/homework/CustomException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab5/src/main/java/homework/ListOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab5/src/main/java/homework/LoadOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab5/src/main/java/homework/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab5/src/main/java/homework/Operation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab5/src/main/java/homework/ReportOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab5/src/main/java/homework/ViewOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab5/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab6/lab6/HelloApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab6/lab6/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab6/lab6/Point.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/lab6/lab6/hello-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab5/Catalog.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab5/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab5/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab5/src/main/java/compulsory/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab5/src/main/java/compulsory/Main.java" afterDir="false" />
+    <list default="true" id="12e8c543-4a51-4ddc-b513-6101657059f3" name="Changes" comment="lab6">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lab6/lab6/GameInstance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab6/lab6/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab6/lab6/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lab6/lab6/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lab6/lab6/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/lab6/lab6/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/lab6/lab6/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -67,6 +50,15 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/maria/Desktop/Advanced_programming/Lab6&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lab6.lab6.HelloApplication" />
+      <module name="Lab6" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -76,6 +68,18 @@
       <option name="presentableId" value="Default" />
       <updated>1679838735166</updated>
     </task>
+    <task id="LOCAL-00001" summary="lab6">
+      <created>1680015791345</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680015791345</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="lab6" />
+    <option name="LAST_COMMIT_MESSAGE" value="lab6" />
   </component>
 </project>
