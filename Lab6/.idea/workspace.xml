@@ -5,7 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12e8c543-4a51-4ddc-b513-6101657059f3" name="Changes" comment="lab6">
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab7/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab7/src/main/java/lab7/homework/ActionThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab7/src/main/java/lab7/homework/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab7/src/main/java/lab7/homework/Timekeeper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/src/main/java/lab8/compulsory/Album.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/src/main/java/lab8/compulsory/AlbumDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/src/main/java/lab8/compulsory/Artist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/src/main/java/lab8/compulsory/ArtistDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/src/main/java/lab8/compulsory/Database.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/src/main/java/lab8/compulsory/Genre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/src/main/java/lab8/compulsory/GenreDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/src/main/java/lab8/compulsory/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab8/src/main/java/lab8/compulsory/initializare.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab9/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab7/src/main/java/lab7/compulsory/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab7/src/main/java/lab7/compulsory/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab7/src/main/java/lab7/compulsory/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab7/src/main/java/lab7/compulsory/Map.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab7/src/main/java/lab7/compulsory/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab7/src/main/java/lab7/compulsory/Robot.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,13 +64,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/maria/Desktop/Advanced_programming/Lab6&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/maria/Desktop/Advanced_programming/lab8"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lab6.lab6.HelloApplication" />

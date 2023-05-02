@@ -31,7 +31,8 @@ public class Map {
                 int col = pair.getValue1();
                 if(!matrix[row][col].isVisited())
                 {
-                    System.out.println(robot.getName() + " visited {" + pair.getValue0() + ", "+pair.getValue1()+" }");
+                    if(robot.getPrintSTring())
+                        System.out.println(robot.getName() + " visited {" + pair.getValue0() + ", "+pair.getValue1()+" }");
                     matrix[row][col].visit();
                     matrix[row][col].getTokens().addAll(SharedMemory.extractTokens(matrix.length));
                     robot.getTokens().addAll(matrix[row][col].getTokens());
@@ -39,7 +40,7 @@ public class Map {
                 }
             }
         }
-        //System.out.println("NOWHERE TO GO :(");
+
         return false;
     }
 
@@ -86,5 +87,57 @@ public class Map {
                 return new Pair<>(row - 1, col + 1);
         }
         return null;
+    }
+
+    public static Pair<Integer, Integer> explore(int x, int y, int direction)
+    {
+        if(direction==1)  y--;
+        else if(direction==2) x++;
+        else if(direction==3) y++;
+        else x--;
+        return new Pair<>(x,y);
+    }
+    public static boolean exploreLogic(Robot robot) {
+
+        if(robot.getxPos() > matrix.length - robot.getxPos() )
+        {
+            var newLocation1 = explore(robot.getxPos(), robot.getyPos(), 4);
+            if(matrix[newLocation1.getValue0()][newLocation1.getValue1()].isVisited() == false)
+            {
+                robot.setDirection(4);
+                matrix[newLocation1.getValue0()][newLocation1.getValue1()].visit();
+                matrix[newLocation1.getValue0()][newLocation1.getValue1()].getTokens().addAll(SharedMemory.extractTokens(matrix.length));
+                robot.getTokens().addAll(matrix[newLocation1.getValue0()][newLocation1.getValue1()].getTokens());
+                return true;
+            }
+            else
+            {
+                var newLocation2 = explore(robot.getxPos(), robot.getyPos(), 2);
+
+                {
+                    robot.setDirection(2);
+                    matrix[newLocation2.getValue0()][newLocation2.getValue1()].visit();
+                    matrix[newLocation2.getValue0()][newLocation2.getValue1()].getTokens().addAll(SharedMemory.extractTokens(matrix.length));
+                    robot.getTokens().addAll(matrix[newLocation2.getValue0()][newLocation2.getValue1()].getTokens());
+                    return true;
+                }
+            }
+
+        }
+        else if(robot.getxPos() < matrix.length - robot.getxPos() )
+        {
+            var newLocation = explore(robot.getxPos(), robot.getyPos(), 2);
+        }
+        else if(robot.getyPos() > matrix.length - robot.getyPos() )
+        {
+            var newLocation = explore(robot.getxPos(), robot.getyPos(), 1);
+        }
+        else if(robot.getyPos() < matrix.length - robot.getyPos() )
+        {
+            var newLocation = explore(robot.getxPos(), robot.getyPos(), 3);
+        }
+
+
+        return false;
     }
 }

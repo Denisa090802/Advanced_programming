@@ -20,14 +20,29 @@ public class Robot implements Runnable {
                 "name='" + name + '\'' + ", x=" + xPos + ", y=" + yPos + ", tokens=" + tokens + '}';
     }
 
-    public Robot(String name, int xPos, int yPos) {
+    public String tokensCount() {
+        return "Robot{" +
+                "name='" + name + '\'' + ", tokens=" + tokens.size() + '}';
+    }
+
+    public Robot(String name, int xPos, int yPos, boolean printString, boolean isRandom) {
         this.name = name;
         this.xPos = xPos;
         this.yPos = yPos;
+        this.printString = printString;
+        this.isRandom = isRandom;
 
         isRunning = true;
     }
 
+    public boolean getPrintSTring()
+    {
+        return printString;
+    }
+
+    private boolean printString;
+
+    private Boolean isRandom;
     public String getName() { return name; }
     public int getxPos() { return xPos; }
     public int getyPos() { return yPos; }
@@ -49,15 +64,24 @@ public class Robot implements Runnable {
     public void run() {
         while(isRunning)
         {
-            if(Map.exploreRandom(this) == false)
+            if(isRandom)
             {
-                System.out.println(name + " finished exploration");
-                isRunning = false;
+                if(Map.exploreRandom(this) == false)
+                {
+                    System.out.println(name + " finished exploration");
+                    isRunning = false;
+                }
+            } else {
+                if(Map.exploreLogic(this) == false)
+                {
+                    System.out.println(name + " finished exploration");
+                    isRunning = false;
+                }
             }
             try {
                 Thread.sleep(500);
             } catch (InterruptedException e) {
-                throw new RuntimeException(e);
+
             }
         }
     }
@@ -69,4 +93,33 @@ public class Robot implements Runnable {
     public void setTokens(List<Token> tokens) {
         this.tokens = tokens;
     }
+
+    public void pause() {
+
+        isRunning = false;
+    }
+
+    public void start() {
+
+        isRunning = true;
+        run();
+    }
+
+    public boolean running()
+    {
+        return isRunning;
+    }
+
+    int direction = 0;
+
+    public void setDirection(int direction)
+    {
+        this.direction = direction;
+    }
+
+    public int getDirection()
+    {
+        return direction;
+    }
+
 }

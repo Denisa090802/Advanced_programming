@@ -24,7 +24,7 @@ public class Main {
             while(!Ok)
             {
                 Ok = true;
-                newRobot = new Robot("robot" + i, rand.nextInt(n), rand.nextInt(n));
+                newRobot = new Robot("robot" + i, rand.nextInt(n), rand.nextInt(n),true, true);
                 for(int q = 0; q < robots.size() && Ok; q++)
                 {
                     if(robots.get(q).isOverlapping(newRobot))
