@@ -50,8 +50,8 @@ public class Game {
     }
 
     private synchronized  boolean isTimeUp() {
-        //   int elapsedTime = (int) ((System.currentTimeMillis() - players.get(0).getLastMoveTime()) / 1_000);
-        //  return elapsedTime >= gameTimeLimit;
+     //   int elapsedTime = (int) ((System.currentTimeMillis() - players.get(0).getLastMoveTime()) / 1_000);
+      //  return elapsedTime >= gameTimeLimit;
         return false;
     }
 

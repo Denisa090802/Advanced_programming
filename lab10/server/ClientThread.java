@@ -32,7 +32,7 @@ public class ClientThread extends Thread {
             String inputLine;
             while (true) {
                 inputLine = input.readLine();
-
+                System.out.println("AU");
                 if (inputLine.equals("stop")) {
                     output.println("Server stopped");
                     break;
@@ -98,9 +98,9 @@ public class ClientThread extends Thread {
                         } else if (game.isGameOver()) {
                             output.println("Game over.");
                         } else if (!game.isPlayerTurn(player)) {
-                            output.println("Is not your turn!");
+                                output.println("Is not your turn!");
                         } else if (!game.getBoard().isValidMove(row, col)) {
-                            output.println("Invalid move");
+                                output.println("Invalid move");
                         }
                     }
                 } else {

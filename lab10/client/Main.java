@@ -7,7 +7,7 @@ public class Main {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        GameClient gameClient = new GameClient("localhost", 1234);
+        GameClient gameClient = new GameClient("localhost", 12345);
         gameClient.start();
     }
 }
